@@ -28,10 +28,10 @@ function dibujarLinea(color, grosor, x_inicial, y_inicial, x_final, y_final, lie
 
 function dibujar(properties) {
     if (properties.buttons == 1) {
-        dibujarLinea(colorDibujo, grosor, x, y, properties.layerX, properties.layerY, papel);
+        dibujarLinea(colorDibujo, grosor, x, y, properties.offsetX, properties.offsetY, papel);
     }
-    y = properties.layerY;
-    x = properties.layerX;
+    y = properties.offsetY;
+    x = properties.offsetX;
 }
 
 function cambiarGrosor(properties) {
